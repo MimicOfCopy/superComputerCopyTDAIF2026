@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "noise_multiplier": 25.0,
+  "max_grad_norm": 1.0,
+  "sample_rate": 0.00819672131147541,
+  "steps": 6100,
+  "delta": 1e-15
+}

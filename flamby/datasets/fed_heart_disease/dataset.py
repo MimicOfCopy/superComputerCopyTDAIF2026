@@ -87,7 +87,7 @@ class HeartDiseaseRaw(Dataset):
             center_name = os.path.basename(center_data_file).split(".")[1]
 
             df = pd.read_csv(center_data_file, header=None)
-            df = df.replace("?", np.NaN).drop([10, 11, 12], axis=1).dropna(axis=0)
+            df = df.replace("?", np.nan).drop([10, 11, 12], axis=1).dropna(axis=0)
 
             df = df.apply(pd.to_numeric)
 

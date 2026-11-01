@@ -127,18 +127,19 @@ if __name__ == "__main__":
         "--num-workers-torch",
         type=int,
         help="How many workers to use for the batching.",
-        default=20,
+        default=0,
     )
     parser.add_argument(
         "--log",
         action="store_true",
         help="Whether to activate tensorboard logging or not default to no logging",
+        default=True,
     )
     parser.add_argument(
         "--log-period",
         type=int,
         help="The period in batches for the logging of metric and loss",
-        default=10,
+        default=20,
     )
     parser.add_argument(
         "--debug",
